@@ -1,0 +1,19 @@
+.square {
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+    -fx-border-color: gray;
+}
+
+.square:hover {
+    -fx-background-color: lightgray;
+}
+
+.square.selected {
+    -fx-background-color: yellow;
+}
+
+.board {
+    -fx-border-style: solid;
+    -fx-border-width: 5px;
+    -fx-border-color: gray;
+}

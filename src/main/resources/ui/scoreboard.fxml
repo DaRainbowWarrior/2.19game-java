@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="617.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="twonineteengame.ui.ScoreboardController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="617.0" prefWidth="600.0">
+         <children>
+            <Label text="Scoreboard">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+            <TableView fx:id="highScoreTable" prefHeight="471.0" prefWidth="600.0">
+              <columns>
+                <TableColumn fx:id="redPlayer" prefWidth="150.0" text="Red Player" />
+                <TableColumn fx:id="bluePlayer" prefWidth="150.0" text="Blue Player" />
+                  <TableColumn fx:id="winner" prefWidth="150.0" text="Winner" />
+                  <TableColumn fx:id="steps" prefWidth="150.0" text="Steps" />
+              </columns>
+            </TableView>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="100.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onBackButton" text="Back">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
